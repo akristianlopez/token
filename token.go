@@ -13,9 +13,9 @@ import (
 type TokenType string
 
 type Token struct {
-	x     int // current line
-	y     int // current column ;
-	sx    int //?
+	CurLine     int // current line
+	CurCol     int // current column ;
+	Sx    int //Current cursor position
 	sy    int //?
 	Token TokenType
 	Value string
@@ -132,3 +132,4 @@ const (
 	FROM   = "FROM"
 	TAKE   = "TAKE"
 )
+
