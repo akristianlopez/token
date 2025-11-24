@@ -22,8 +22,8 @@ type Token struct {
 }
 
 func (t *Token) SetPos(x, y int) {
-	t.x = x
-	t.y = y
+	t.CurLine = x
+	t.CurCol = y
 }
 func traitsChar(s string) string {
 	switch {
@@ -132,6 +132,7 @@ const (
 	FROM   = "FROM"
 	TAKE   = "TAKE"
 )
+
 
 
 
