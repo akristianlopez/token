@@ -15,7 +15,7 @@ type TokenType string
 type Token struct {
 	CurLine     int // current line
 	CurCol     int // current column ;
-	Sx    int //Current cursor position
+	CurPos    int //Current cursor position
 	sy    int //?
 	Token TokenType
 	Value string
@@ -132,4 +132,5 @@ const (
 	FROM   = "FROM"
 	TAKE   = "TAKE"
 )
+
 
