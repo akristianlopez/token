@@ -149,6 +149,7 @@ const (
 	TOKEN_DATE_LITERAL
 	TOKEN_TIME_LITERAL
 	TOKEN_DURATION_LITERAL
+	TOKEN_BROWSE
 
 	// Opérateurs
 	TOKEN_PLUS
@@ -206,6 +207,7 @@ var tokenNames = map[TokenType]string{
 	TOKEN_THEN:    "THEN",
 	TOKEN_LARROW:  "<-",
 	TOKEN_RARROW:  "->",
+	TOKEN_BROWSE:  "BROWSE",
 
 	TOKEN_LET:      "LET",
 	TOKEN_CONST:    "CONST",
