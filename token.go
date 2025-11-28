@@ -38,6 +38,8 @@ const (
 	TOKEN_SWITCH
 	TOKEN_CASE
 	TOKEN_DEFAULT
+	TOKEN_DO
+	TOKEN_THEN
 
 	// Déclarations
 	TOKEN_LET
@@ -45,6 +47,7 @@ const (
 	TOKEN_STRUCT
 	TOKEN_FUNCTION
 	TOKEN_RETURN
+	TOKEN_TYPE
 
 	// SQL et bases de données
 	TOKEN_SELECT
@@ -89,6 +92,8 @@ const (
 	TOKEN_INDEX
 	TOKEN_SEQUENCE
 	TOKEN_NOT
+	TOKEN_RARROW
+	TOKEN_LARROW
 	// TOKEN_DEFAULT
 
 	// Types de base
@@ -197,12 +202,17 @@ var tokenNames = map[TokenType]string{
 	TOKEN_SWITCH:  "SWITCH",
 	TOKEN_CASE:    "CASE",
 	TOKEN_DEFAULT: "DEFAULT",
+	TOKEN_DO:      "DO",
+	TOKEN_THEN:    "THEN",
+	TOKEN_LARROW:  "<-",
+	TOKEN_RARROW:  "->",
 
 	TOKEN_LET:      "LET",
 	TOKEN_CONST:    "CONST",
 	TOKEN_STRUCT:   "STRUCT",
 	TOKEN_FUNCTION: "FUNCTION",
 	TOKEN_RETURN:   "RETURN",
+	TOKEN_TYPE:     "type",
 
 	TOKEN_SELECT: "SELECT",
 	TOKEN_FROM:   "FROM",
